@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #333;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    input {
+      width: 200px;
+      padding: 5px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    th:hover {
+      background-color: #f2f2f2;
+    }
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca</h1>
+      </header>
+      <main>
+        <section>
+          <h2>Libros</h2>
+          <button onclick="buscarLibros()">Buscar</button>
+          <button onclick="limpiarFiltroLibros()">Limpiar</button>
+          <table id="libro-table">
+            <thead>
+              <tr>
+                <th><input type="text" id="libro-titulo-input" placeholder="Título"></th>
+                <th><input type="text" id="libro-autor-input" placeholder="Autor"></th>
+                <th><input type="text" id="libro-anio-input" placeholder="Año"></th>
+                <th><input type="text" id="libro-estado-input" placeholder="Estado"></th>
+              </tr>
+            </thead>
+            <tbody id="libro-tbody"></tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Usuarios</h2>
+          <button onclick="buscarUsuarios()">Buscar</button>
+          <button onclick="limpiarFiltroUsuarios()">Limpiar</button>
+          <table id="usuario-table">
+            <thead>
+              <tr>
+                <th><input type="text" id="usuario-nombre-input" placeholder="Nombre"></th>
+                <th><input type="text" id="usuario-email-input" placeholder="Email"></th>
+                <th><input type="text" id="usuario-libros-input" placeholder="Libros"></th>
+              </tr>
+            </thead>
+            <tbody id="usuario-tbody"></tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Estadísticas</h2>
+          <p>Total de libros: <span id="total-libros">0</span></p>
+          <p>Libros disponibles: <span id="libros-disponibles">0</span></p>
+          <p>Libros prestados: <span id="libros-prestados">0</span></p>
+          <p>Total de usuarios: <span id="total-usuarios">0</span></p>
+        </section>
+      </main>
+    <script src="biblio.js"></script>
+</body>
+</html>
