@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad-2</title>
+    <link  href="style.css">
+</head>
+<body>
+    <form id="solicitudEmpleo" novalidate>
+        <fieldset>
+          <legend>Formulario de Solicitud de Empleo</legend>
+      
+          <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3">
+            <div class="error-message" id="nombre-error"></div>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="email-error"></div>
+          </div>
+      
+          <div class="form-group">
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+            <div class="error-message" id="telefono-error"></div>
+          </div>
+      
+          <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <div class="error-message" id="direccion-error"></div>
+          </div>
+      
+          <div class="form-group">
+            <label for="posicion">Posición solicitada:</label>
+            <input type="text" id="posicion" name="posicion" required>
+            <div class="error-message" id="posicion-error"></div>
+          </div>
+      
+          <div class="form-group">
+            <label for="cv">CV (PDF):</label>
+            <input type="file" id="cv" name="cv" required accept=".pdf">
+            <div class="error-message" id="cv-error"></div>
+          </div>
+      
+          <div class="form-group">
+            <label for="carta">Carta de presentación (opcional):</label>
+            <input type="file" id="carta" name="carta" accept=".pdf">
+            <div class="error-message" id="carta-error"></div>
+          </div>
+      
+          <div class="form-group">
+            <label for="mensaje">Mensaje adicional:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+      
+          <button type="submit">Enviar Solicitud</button>
+        </fieldset>
+      </form>
+      
+
+      <script src="script.js"></script>
+</body>
+</html>
