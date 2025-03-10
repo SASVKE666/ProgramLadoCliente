@@ -11,6 +11,8 @@ Formulario de solicitud de empleo
 ## Instrucciones de Ejecución
 
 ### Requisitos Previos
+https://www.justinmind.com/es/blog/ejemplos-de-formularios-web-movil/
+https://elementor.com/blog/es/diseno-de-formularios-web-15-ejemplos-para-hacerlo-correctamente/
 Asegúrate de tener un navegador web moderno instalado (como Google Chrome, Firefox o Edge).
 
 ### Pasos para Ejecutar el Proyecto
