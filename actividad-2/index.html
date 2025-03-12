@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad-2</title>
-    <link  href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="solicitudEmpleo" novalidate>
+    <form id="solicitudEmpleo" novalidate >
         <fieldset>
             <legend>Formulario de Solicitud de Empleo</legend>
 
@@ -59,7 +59,7 @@
             </div>
 
             <div class="form-group">
-                <label for="educacion">Nivel de Educación</label>
+                <label for="educacion">Nivel Màximo de Educación</label>
                 <input list="nivelesEducacion" id="educacion" name="educacion" required>
                 <datalist id="nivelesEducacion">
                     <option value="Primaria">
@@ -87,7 +87,7 @@
                 <textarea id="mensaje" name="mensaje"></textarea>
             </div>
 
-            <button type="submit">Enviar Solicitud</button>
+            <button onclick="scrollToTop()" type="submit">Enviar Solicitud</button>
         </fieldset>
     </form>
       
